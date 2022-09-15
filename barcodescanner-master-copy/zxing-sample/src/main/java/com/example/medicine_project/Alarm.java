@@ -16,7 +16,7 @@ public class Alarm {
     private Drug drug;
     private int[] date = new int[7]; // 요일
     private int[] time = new int[3]; //맘에드는클래스로..., 하루에 세번 까지...
-    private double volume; // 약 먹는 양, 반개 허용, 최대 3알
+    private double volume; // 약 먹는 양, 반개 허용, 최대 3
     private String memo;
 
     private int enabled = 0;    // 알림 설정 여부
