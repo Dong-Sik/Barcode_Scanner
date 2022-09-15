@@ -14,12 +14,12 @@ import java.time.LocalDateTime;
 
 public class Alarm {
     private Drug drug;
-    private boolean[] date = new boolean[7]; // 요일
-    private LocalDateTime[] time = new LocalDateTime[3]; //맘에드는클래스로..., 하루에 세번 까지...
+    private int[] date = new int[7]; // 요일
+    private int[] time = new int[3]; //맘에드는클래스로..., 하루에 세번 까지...
     private double volume; // 약 먹는 양, 반개 허용, 최대 3알
     private String memo;
 
-    private boolean enabled = false;    // 알림 설정 여부
+    private int enabled = 0;    // 알림 설정 여부
 
     public Alarm() {
 
@@ -35,50 +35,4 @@ public class Alarm {
 
     }*/
 
-    public Drug getDrug() {
-        return drug;
-    }
-    public void setDrug(Drug drug) {
-        this.drug = drug;
-    }
-
-    public boolean[] getDate() {
-        return date;
-    }
-
-    public void setDate(boolean[] date) {
-        this.date = date;
-    }
-
-    public LocalDateTime[] getTime() {
-        return time;
-    }
-
-    public void setTime(LocalDateTime[] time) {
-        this.time = time;
-    }
-
-    public double getVolume() {
-        return volume;
-    }
-
-    public void setVolume(double volume) {
-        this.volume = volume;
-    }
-
-    public String getMemo() {
-        return memo;
-    }
-
-    public void setMemo(String memo) {
-        this.memo = memo;
-    }
-
-    public boolean isEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-    }
 }
